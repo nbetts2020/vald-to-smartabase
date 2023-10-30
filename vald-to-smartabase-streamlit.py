@@ -58,7 +58,7 @@ def process_csv(vald):
     df = pd.DataFrame(new_vald)
     return df
 
-st.title("CSV Processor")
+st.title("Vald to Smartabase CSV Processor")
 st.write("Upload your VALD CSV")
 
 uploaded_file = st.file_uploader("", type="csv")
