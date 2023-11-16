@@ -7,7 +7,10 @@ abbr_dict = {
     "Hip AD/AB": ["Hip Abduction", "Hip Adduction"],
     "Shoulder IR/ER": ["Shoulder Internal Rotation", "Shoulder External Rotation"],
     "Hip IR/ER": ["Hip Internal Rotation", "Hip External Rotation"],
-    "Ankle IN/EV": ["Ankle Inversion", "Ankle Eversion"]
+    "Ankle IN/EV": ["Ankle Inversion", "Ankle Eversion"],
+    "Knee Flexion": ["Knee Flexion", "Knee Flexion"],
+    "Knee Extension": ["Knee Extension", "Knee Extension"],
+    "Hip Flexion": ["Hip Flexion", "Hip Flexion"]
 }
 
 def load_vald(file):
