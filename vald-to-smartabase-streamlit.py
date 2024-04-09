@@ -33,7 +33,7 @@ def process_csv(vald, metric_choice):
     if ratio_col:
         l_mean_force_ratio = test_type_split[0] + " L " + test_type_split[0] + f" {metric_choice} Force Ratio"
         r_mean_force_ratio = test_type_split[0] + " R " + test_type_split[0] + f" {metric_choice} Force Ratio"
-        if test_type_split == "Shoulder":
+        if test_type == "Shoulder IR/ER":
             movement_specific_columns = [r_mean_force1, l_mean_force1, r_mean_force2, l_mean_force2, r_mean_force_ratio, l_mean_force_ratio]
         else:
             movement_specific_columns = [l_mean_force1, r_mean_force1, l_mean_force2, r_mean_force2, l_mean_force_ratio, r_mean_force_ratio]
@@ -53,7 +53,7 @@ def process_csv(vald, metric_choice):
         "group-uuid": ["n/a"] * int(len(vald["Date UTC"])/2)
     }
     else:
-        if test_type_split == "Shoulder":
+        if test_type == "Shoulder IR/ER":
             movement_specific_columns = [r_mean_force1, l_mean_force1, r_mean_force2, l_mean_force2]
         else:
             movement_specific_columns = [l_mean_force1, r_mean_force1, l_mean_force2, r_mean_force2]
