@@ -74,9 +74,9 @@ def process_csv(vald, metric_choice):
             new_vald["About"][int(.5*i)] = vald["Name"][i]
             new_vald["Test Type"][int(.5*i)] = vald["Test"][i]
             if test_type == "Shoulder IR/ER":
-                new_vald[abbr_dict[vald["Test"][0]][0] + f" L {metric_choice} Force"][int(.5*i)] = vald[f"L {metric_choice} Force (N)"][i]
+                new_vald[abbr_dict[vald["Test"][0]][0] + f" L {metric_choice} Force"][int(.5*i)] = vald[f"L {metric_choice} Force (N)"][i+1]
                 new_vald[abbr_dict[vald["Test"][0]][0] + f" R {metric_choice} Force"][int(.5*i)] = vald[f"R {metric_choice} Force (N)"][i+1]
-                new_vald[abbr_dict[vald["Test"][0]][1] + f" L {metric_choice} Force"][int(.5*i)] = vald[f"L {metric_choice} Force (N)"][i+1]
+                new_vald[abbr_dict[vald["Test"][0]][1] + f" L {metric_choice} Force"][int(.5*i)] = vald[f"L {metric_choice} Force (N)"][i]
                 new_vald[abbr_dict[vald["Test"][0]][1] + f" R {metric_choice} Force"][int(.5*i)] = vald[f"R {metric_choice} Force (N)"][i]
             else:
                 new_vald[abbr_dict[vald["Test"][0]][0] + f" L {metric_choice} Force"][int(.5*i)] = vald[f"L {metric_choice} Force (N)"][i]
