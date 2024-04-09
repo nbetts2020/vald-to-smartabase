@@ -18,6 +18,8 @@ def load_vald(file):
     return vald
 
 def process_csv(vald, metric_choice):
+    print(type(vald))
+    print(vald.columns)
     test_type = vald["Test"][0]
     test_type_split = test_type.split(" ")
 
