@@ -5,7 +5,7 @@ import base64
 # Abbreviation Dictionary
 abbr_dict = {
     "Hip AD/AB": ["Hip Abduction", "Hip Adduction"],
-    "Shoulder IR/ER": ["Shoulder External Rotation", "Shoulder Internal Rotation"],
+    "Shoulder IR/ER": ["Shoulder Internal Rotation", "Shoulder External Rotation"],
     "Hip IR/ER": ["Hip Internal Rotation", "Hip External Rotation"],
     "Ankle IN/EV": ["Ankle Inversion", "Ankle Eversion"],
     "Knee Flexion": ["Knee Flexion", "Knee Flexion"],
